@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Sudoku layout</title>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+
+  <style type="text/css">
+    /* change font size to change scale */
+    .sudoku-grid {
+      font-size: 24px;
+    }
+    /* groups */
+    .sudoku-grid > div > div {
+      float: left;
+      border: 1px solid black;
+    }
+    /* rows */
+    .sudoku-grid > div
+    , .sudoku-grid > div > div > div {
+      clear: left;
+    }
+    /* cells */
+    .sudoku-grid > div > div > div > div {
+      float: left;
+      width: 75px;
+      height: 75px;
+      border-right: 1px solid silver;
+      border-bottom: 1px solid silver;
+      text-align: center;
+      line-height: 1.3em;
+    }
+    /* outer border tweaks */
+    .sudoku-grid > div > div:first-child {
+      border-left: 2px solid black;
+    }
+    .sudoku-grid > div > div:last-child {
+      border-right: 2px solid black;
+    }
+    .sudoku-grid > div:first-child > div {
+      border-top: 2px solid black;
+    }
+    .sudoku-grid > div:last-child > div {
+      border-bottom: 2px solid black;
+    }
+    /* inner border tweaks */
+    .sudoku-grid > div > div > div div:last-child {
+      border-right: none;
+    }
+    .sudoku-grid > div > div > div:last-child div {
+      border-bottom: none;
+    }
+  </style>
+</head>
+<body>
+
+
+<div style="clear: left; height: 30px;"></div>
+
+<div class="sudoku-grid">
+  <div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+  <div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+    <div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <div>
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div style="clear: left; height: 30px;"></div>
+
+
+
+</body>
+</html>
