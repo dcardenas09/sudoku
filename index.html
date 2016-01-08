@@ -1,226 +1,157 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Sudoku layout</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <style type="text/css">
-    /* change font size to change scale */
-    .sudoku-grid {
-      font-size: 24px;
-    }
-    /* groups */
-    .sudoku-grid > div > div {
-      float: left;
-      border: 1px solid black;
-    }
-    /* rows */
-    .sudoku-grid > div
-    , .sudoku-grid > div > div > div {
-      clear: left;
-    }
-    /* cells */
-    .sudoku-grid > div > div > div > div {
-      float: left;
-      width: 75px;
-      height: 75px;
-      border-right: 1px solid silver;
-      border-bottom: 1px solid silver;
-      text-align: center;
-      line-height: 1.3em;
-    }
-    /* outer border tweaks */
-    .sudoku-grid > div > div:first-child {
-      border-left: 2px solid black;
-    }
-    .sudoku-grid > div > div:last-child {
-      border-right: 2px solid black;
-    }
-    .sudoku-grid > div:first-child > div {
-      border-top: 2px solid black;
-    }
-    .sudoku-grid > div:last-child > div {
-      border-bottom: 2px solid black;
-    }
-    /* inner border tweaks */
-    .sudoku-grid > div > div > div div:last-child {
-      border-right: none;
-    }
-    .sudoku-grid > div > div > div:last-child div {
-      border-bottom: none;
-    }
-  </style>
-</head>
+    <head>
+       <title>Sudoku layout</title>
+       <link rel="stylesheet" href="css/style.css">
+       <link href='https://fonts.googleapis.com/css?family=Bangers' rel='stylesheet' type='text/css'>
+    </head>
 <body>
-
-
-<div style="clear: left; height: 30px;"></div>
-
-<div class="sudoku-grid">
-  <div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </div>
-  <div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-    <div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-      <div>
-        <div></div>
-        <div></div>
-        <div></div>
-      </div>
-    </div>
-  </div>
-</div>
-
-<div style="clear: left; height: 30px;"></div>
-
-
-
+    <table>
+        <tr>
+            <td id="r0c0"><input type="text" maxlength="1"></td>
+            <td id="r0c1"><input type="text" maxlength="1"></td>
+            <td id="r0c2"><input type="text" maxlength="1"></td>
+            <td id="r0c3"><input type="text" maxlength="1"></td>
+            <td id="r0c4"><input type="text" maxlength="1"></td>
+            <td id="r0c5"><input type="text" maxlength="1"></td>
+            <td id="r0c6"><input type="text" maxlength="1"></td>
+            <td id="r0c7"><input type="text" maxlength="1"></td>
+            <td id="r0c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r1c0"><input type="text" maxlength="1"></td>
+            <td id="r1c1"><input type="text" maxlength="1"></td>
+            <td id="r1c2"><input type="text" maxlength="1"></td>
+            <td id="r1c3"><input type="text" maxlength="1"></td>
+            <td id="r1c4"><input type="text" maxlength="1"></td>
+            <td id="r1c5"><input type="text" maxlength="1"></td>
+            <td id="r1c6"><input type="text" maxlength="1"></td>
+            <td id="r1c7"><input type="text" maxlength="1"></td>
+            <td id="r1c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r2c0"><input type="text" maxlength="1"></td>
+            <td id="r2c1"><input type="text" maxlength="1"></td>
+            <td id="r2c2"><input type="text" maxlength="1"></td>
+            <td id="r2c3"><input type="text" maxlength="1"></td>
+            <td id="r2c4"><input type="text" maxlength="1"></td>
+            <td id="r2c5"><input type="text" maxlength="1"></td>
+            <td id="r2c6"><input type="text" maxlength="1"></td>
+            <td id="r2c7"><input type="text" maxlength="1"></td>
+            <td id="r2c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r3c0"><input type="text" maxlength="1"></td>
+            <td id="r3c1"><input type="text" maxlength="1"></td>
+            <td id="r3c2"><input type="text" maxlength="1"></td>
+            <td id="r3c3"><input type="text" maxlength="1"></td>
+            <td id="r3c4"><input type="text" maxlength="1"></td>
+            <td id="r3c5"><input type="text" maxlength="1"></td>
+            <td id="r3c6"><input type="text" maxlength="1"></td>
+            <td id="r3c7"><input type="text" maxlength="1"></td>
+            <td id="r3c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r4c0"><input type="text" maxlength="1"></td>
+            <td id="r4c1"><input type="text" maxlength="1"></td>
+            <td id="r4c2"><input type="text" maxlength="1"></td>
+            <td id="r4c3"><input type="text" maxlength="1"></td>
+            <td id="r4c4"><input type="text" maxlength="1"></td>
+            <td id="r4c5"><input type="text" maxlength="1"></td>
+            <td id="r4c6"><input type="text" maxlength="1"></td>
+            <td id="r4c7"><input type="text" maxlength="1"></td>
+            <td id="r4c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r5c0"><input type="text" maxlength="1"></td>
+            <td id="r5c1"><input type="text" maxlength="1"></td>
+            <td id="r5c2"><input type="text" maxlength="1"></td>
+            <td id="r5c3"><input type="text" maxlength="1"></td>
+            <td id="r5c4"><input type="text" maxlength="1"></td>
+            <td id="r5c5"><input type="text" maxlength="1"></td>
+            <td id="r5c6"><input type="text" maxlength="1"></td>
+            <td id="r5c7"><input type="text" maxlength="1"></td>
+            <td id="r5c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r6c0"><input type="text" maxlength="1"></td>
+            <td id="r6c1"><input type="text" maxlength="1"></td>
+            <td id="r6c2"><input type="text" maxlength="1"></td>
+            <td id="r6c3"><input type="text" maxlength="1"></td>
+            <td id="r6c4"><input type="text" maxlength="1"></td>
+            <td id="r6c5"><input type="text" maxlength="1"></td>
+            <td id="r6c6"><input type="text" maxlength="1"></td>
+            <td id="r6c7"><input type="text" maxlength="1"></td>
+            <td id="r6c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r7c0"><input type="text" maxlength="1"></td>
+            <td id="r7c1"><input type="text" maxlength="1"></td>
+            <td id="r7c2"><input type="text" maxlength="1"></td>
+            <td id="r7c3"><input type="text" maxlength="1"></td>
+            <td id="r7c4"><input type="text" maxlength="1"></td>
+            <td id="r7c5"><input type="text" maxlength="1"></td>
+            <td id="r7c6"><input type="text" maxlength="1"></td>
+            <td id="r7c7"><input type="text" maxlength="1"></td>
+            <td id="r7c8"><input type="text" maxlength="1"></td>
+        </tr>
+        <tr>
+            <td id="r8c0"><input type="text" maxlength="1"></td>
+            <td id="r8c1"><input type="text" maxlength="1"></td>
+            <td id="r8c2"><input type="text" maxlength="1"></td>
+            <td id="r8c3"><input type="text" maxlength="1"></td>
+            <td id="r8c4"><input type="text" maxlength="1"></td>
+            <td id="r8c5"><input type="text" maxlength="1"></td>
+            <td id="r8c6"><input type="text" maxlength="1"></td>
+            <td id="r8c7"><input type="text" maxlength="1"></td>
+            <td id="r8c8"><input type="text" maxlength="1"></td>
+        </tr>
+    </table>
+    <div id="button-validator" class="btn">Submit Puzzle!</div>
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="js/main.js"></script>
+    <script>
+        $.ajax({
+            url: "http://104.131.17.187:4004/sudoku",
+            success: function(resp, text, xhr){
+                for (var r = 0; r <9; r++){
+                    for (var c = 0; c <9; c++){
+                        var cellid = "#r"+r+"c"+c;
+                        if (resp[r][c] != ""){
+                            $(cellid).html(resp[r][c]);
+                        }
+                    }
+                }
+            }
+        });
+        $("#button-validator").click(function(){
+            var userBoard = loadUserBoard();
+            console.log(userBoard);
+            var sudoku = new Sudoku(userBoard);
+            alert("Sudoku Validation Result: "+sudoku.isValid());
+        });
+        
+        function loadUserBoard(){
+            var result = [
+                new Array(9), new Array(9), new Array(9), new Array(9),
+                new Array(9), new Array(9), new Array(9), new Array(9),
+                new Array(9)
+                ];
+            for (var r = 0; r < 9; r++){
+                 for (var c = 0; c < 9; c++){
+                var cellid = "#r"+r+"c"+c;
+                var cellValue;
+                if ($(cellid).find("input")[0]){
+                    cellValue = $(cellid).find("input").val();
+            }
+            else{
+                cellValue = $(cellid).html();
+            }
+            result[r][c] = cellValue;
+        }
+        }
+        return result;
+        }
+    </script>
 </body>
 </html>
